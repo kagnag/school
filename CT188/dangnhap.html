@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script.js"></script>
     <title>Đăng Nhập</title>
   </head>
 
@@ -70,11 +71,12 @@
               />
             </div>
 
-            <div>
-              <label for="email"
-                ><i class="fa fa-envelope icon-login"></i
-              ></label>
+            <div class="input-container">
+              <label for="email">
+                <i class="fa fa-envelope icon-login"></i>
+              </label>
               <input
+                class="input-field"
                 type="text"
                 name="email"
                 id="email"
@@ -84,9 +86,12 @@
                 required
               />
             </div>
-            <div>
-              <label for="psw"><i class="fa fa-key icon-login"></i></label>
+            <div class="input-container">
+              <label for="psw">
+                <i class="fa fa-key icon-login"></i>
+              </label>
               <input
+                class="input-field"
                 type="password"
                 name="psw"
                 id="psw"
@@ -99,14 +104,12 @@
 
             <div>
               Bạn quên <a class="qmk" href="">Mật Khẩu?</a>
-              <input type="checkbox" />
+              <input type="checkbox" checked="checked" name="remember" />
               Ghi nhớ cho lần đăng nhập sau
             </div>
 
             <div>
-              <button type="submit" value="Đăng Ký" onclick="alert('Đã gửi')">
-                Đăng Ký
-              </button>
+              <button type="submit" value="Đăng Ký">Đăng Ký</button>
               <button type="reset" value="Huỷ">Huỷ</button>
             </div>
           </fieldset>

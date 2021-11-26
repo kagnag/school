@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./test.js" />
+    <script src="script.js"></script>
     <title>Sản Phẩm</title>
   </head>
   <body>
@@ -35,18 +35,20 @@
           <a href="dangky.html">Đăng Ký</a>
           <a href="lienhe.html">Liên Hệ</a>
         </p>
+
         <div class="search-container">
-          <form method="get" action="#">
+          <form name="frm-search" method="get" action="timkiem.html">
             <div class="input-container">
               <input
-                id="search"
                 class="search-input"
                 type="text"
                 placeholder="Nhập nội dung cần tìm"
+                name="words"
+                onkeypress="checkKeySearch(e)"
               />
-              <i class="fa fa-search"></i>
-              <i class="fa fa-shopping-cart"></i>
-            </div>
+              <i class="fa fa-search" onclick="doSearch()"></i>
+              <i class="fa fa-shopping-cart" onclick="openCart()"></i>
+            
           </form>
         </div>
       </nav>
@@ -68,10 +70,15 @@
             </p>
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp001"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp001')">Đặt hàng</button>
             </span>
           </div>
 
@@ -87,10 +94,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp002"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp002')">Đặt hàng</button>
             </span>
           </div>
 
@@ -106,10 +118,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp003"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp003')">Đặt hàng</button>
             </span>
           </div>
         </section>
@@ -127,12 +144,17 @@
               <a href="">Xem chi tiết</a>
             </p>
 
-            <span 
+            <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp004"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp004')">Đặt hàng</button>
             </span>
           </div>
 
@@ -148,12 +170,16 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp005"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp005')">Đặt hàng</button>
             </span>
-            </div>
           </div>
 
           <div class="div-product">
@@ -168,10 +194,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp006"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp006')">Đặt hàng</button>
             </span>
           </div>
         </section>
@@ -191,10 +222,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp007"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp007')">Đặt hàng</button>
             </span>
           </div>
 
@@ -210,10 +246,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp008"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp008')">Đặt hàng</button>
             </span>
           </div>
 
@@ -229,10 +270,15 @@
 
             <span
               >Số lượng:
-              <input type="number" max="100" min="0" value="0" size="3" />
-              <button onclick="addCart('sp001')" class="button">
-                Đặt hàng
-              </button>
+              <input
+                id="sp009"
+                type="number"
+                max="100"
+                min="0"
+                value="0"
+                size="3"
+              />
+              <button onclick="addCart('sp009')">Đặt hàng</button>
             </span>
           </div>
         </section>

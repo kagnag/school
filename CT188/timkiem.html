@@ -12,8 +12,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./test.js" />
-    <title>Tìm Kiếm</title>
+    <script src="script.js"></script>
+    <title>Giỏ Hàng</title>
+    <script>
+      window.onload = function () {
+        showSearch();
+      };
+    </script>
   </head>
 
   <body>
@@ -37,24 +42,30 @@
           <a href="dangky.html">Đăng Ký</a>
           <a href="lienhe.html">Liên Hệ</a>
         </p>
+
         <div class="search-container">
-          <form method="get" action="timkiem.html">
+          <form name="frm-search" method="get" action="timkiem.html">
             <div class="input-container">
               <input
-                id="search"
                 class="search-input"
                 type="text"
                 placeholder="Nhập nội dung cần tìm"
+                name="words"
+                onkeypress="checkKeySearch(e)"
               />
-              <i class="fa fa-search"></i>
-              <i class="fa fa-shopping-cart"></i>
+              <i class="fa fa-search" onclick="doSearch()"></i>
+              <i class="fa fa-shopping-cart" onclick="openCart()"></i>
             </div>
           </form>
         </div>
       </nav>
     </header>
 
-    <main class="one-col"></main>
+    <main class="one-col">
+      <article class="main-content">
+        <div id="searchDetail"></div>
+      </article>
+    </main>
 
     <footer>
       <div>

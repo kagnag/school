@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px 0 #00000066, 0 0 5px 0 #0000004d;
+}
+.adstopcontainer {
+  left: 0;
+  top: 10px;
+  height: 300px;
+}
+.adstoptext {
+  white-space: wrap;
+}
+.adstext {
+  position: absolute;
+  left: 5px;
+}
+.adsleftcontainer {
+  bottom: 50px;
+  height: 50px;
+}
+.adslefttext {
+  white-space: nowrap;
+}

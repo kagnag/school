@@ -1,0 +1,421 @@
+/* Bài tập 1 */
+
+main,
+header,
+footer {
+  border-radius: 5px;
+  border: 1px solid #ccc7c8;
+  background-image: #fff;
+}
+
+body {
+  max-width: 1024px;
+  font: 1.2em Helvetica, arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 5px;
+  text-decoration: none;
+  display: grid;
+  grid-template-areas: "header-cell" "nav-cell" "main-cell" "footer-cell";
+}
+
+main {
+  grid-area: main-cell;
+  display: grid;
+  padding: 0 5px;
+}
+
+main.one-col {
+  grid-template-areas: "left-cell" "article-cell" "right-cell";
+}
+
+main.two-col-left {
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "left-cell article-cell";
+}
+
+main.two-col-right {
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "article-cell right-cell";
+}
+
+main.three-col {
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "left-cell article-cell right-cell";
+}
+
+header {
+  grid-area: header-cell;
+  margin-bottom: 2px;
+  height: 100px;
+  padding: 0 5px;
+  background-image: url("images/header.png");
+}
+
+#header-img1 {
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  animation: img1 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img1 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+#header-img2 {
+  height: 70px;
+  position: absolute;
+  top: -5px;
+  animation: img2 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img2 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 45%;
+  }
+}
+
+#header-img3 {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  animation: img3 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes img3 {
+  from {
+    left: 80%;
+  }
+  to {
+    left: 63%;
+  }
+}
+
+.searchBtn {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+header nav {
+  grid-area: nav-cell;
+  margin-top: -15px;
+}
+
+header nav a {
+  float: left;
+  margin: 3px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 2px 4px;
+  height: 20px;
+  font-size: 17px;
+  color: #ed4190;
+  text-align: center;
+  background: #ffffff80;
+  text-decoration: none;
+  box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+
+header nav a:hover {
+  color: #fff;
+  background-color: #ed4190;
+}
+
+.search-container {
+  float: right;
+  padding-top: 3px;
+}
+
+.fa-search,
+.fa-shopping-cart {
+  padding: 4px;
+  min-width: 30px;
+  color: #fff;
+  background-color: #cddc39;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-container {
+  padding-top: 3px;
+}
+
+.fa-shopping-cart {
+  color: #ed4190;
+  margin-left: 5px;
+}
+
+main img {
+  border-radius: 5px;
+}
+
+footer {
+  grid-area: footer-cell;
+  margin-top: 2px;
+  color: #000;
+  text-align: center;
+  /* padding: 0 5px; */
+  padding: 10px;
+}
+
+footer .social-icon {
+  color: #ed4190;
+  text-decoration: none;
+}
+
+footer .gotop {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.top {
+  width: 60px;
+}
+
+/* Bài tập 2 */
+
+article {
+  grid-area: article-cell;
+}
+
+aside.left-side {
+  grid-area: left-cell;
+}
+
+aside.right-side {
+  grid-area: right-cell;
+}
+
+aside.left-side,
+aside.right-side {
+  margin: 2px;
+  padding: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #f9086d;
+}
+
+h1 {
+  margin: 12px 0 16px 0;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+
+h1:after {
+  position: relative;
+  left: 50%;
+  display: block;
+  content: " ";
+  width: 200px;
+  height: 3px;
+  transform: skewX(-120deg) translateX(-50%);
+  background: radial-gradient(#cddc39, #fff);
+}
+
+h2 {
+  margin: 5px 0 10px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  margin: 5px 0 10px 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.col-list {
+  column-count: 2;
+}
+
+h3.break-column {
+  break-before: column;
+}
+
+.round-figure {
+  border-radius: 5px;
+}
+
+.image-left img,
+.image-left video {
+  float: left;
+  width: 30%;
+}
+
+.image-left p,
+.image-right p {
+  margin: 0;
+  width: 69%;
+}
+
+.image-left p {
+  float: right;
+}
+
+.image-right img,
+.image-right video {
+  width: 29%;
+  float: right;
+}
+
+.image-right p {
+  float: left;
+}
+
+.image-right video {
+  width: 300px;
+  height: 240px;
+}
+
+.detail {
+  padding: 0 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+  color: #000;
+}
+
+.order-step {
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.order-step div {
+  display: inline-block;
+  border: 1px solid #ed4190;
+  border-radius: 5px;
+  padding-top: 5px;
+  min-width: 24%;
+}
+
+article.main-content {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.contact {
+  width: 100px;
+  height: 100px;
+}
+
+/* lien he */
+
+.flag {
+  height: 1em;
+  background-color: #cddc39;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+/* gioi thieu */
+
+.image-tt img {
+  width: 100%;
+}
+
+/* tin tuc */
+
+/* dang nhap */
+
+.img-login {
+  width: 300px;
+}
+
+/* dang ky */
+
+fieldset div {
+  margin-left: 25%;
+}
+
+.icon-login {
+  padding: 4px;
+  width: 40px;
+  color: #fff;
+  background-color: #cddc39;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Lien he */
+main > span > img {
+  background-color: #cddc39;
+  padding: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+main > table {
+  margin: 0px auto;
+}
+
+main table label {
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  background-color: #cddc39;
+  color: #fff;
+}
+
+main table td {
+  vertical-align: bottom;
+}
+
+/* ads */
+.container {
+  position: fixed;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px 0 #00000066, 0 0 5px 0 #0000004d;
+}
+
+.adstopcontainer {
+  left: 0;
+  top: 10px;
+  height: 300px;
+}
+
+.adstoptext {
+  white-space: wrap;
+}
+
+.adstext {
+  position: absolute;
+  left: 5px;
+}
+
+.adsleftcontainer {
+  bottom: 50px;
+  height: 50px;
+}
+
+.adslefttext {
+  white-space: nowrap;
+}

@@ -1,11 +1,12 @@
 (define (problem pdl)
     (:domain air-cargo)
-    (:objects c1 c2 p1 p2 SFO JFK)
+    (:objects c1 c2 c3 p1 noibai tansonnhat)
     (:init
-        (cargo c1) (cargo c2) (plane p1) (plane p2)
-        (airport SFO) (airport JFK)
-        (at c1 SFO) (at c2 JFK) (at p1 SFO) (at p2 JFK)
+        (Parkage c1) (Parkage c2) (Parkage c3) (Plane p1) 
+        (Airport noibai) (Airport tansonnhat)
+        (At c1 tansonnhat) (At c2 tansonnhat) (At c3 noibai)
+		(At p1 noibai) 
     )
-    (:goal (and (at c1 JFK) (at c2 SFO)))
+    (:goal (and (At c1 noibai) (At c2 noibai) (At c3 tansonnhat)))
 
 )

@@ -672,7 +672,7 @@
     <!-- http://www.semanticweb.org/thu/ontologies/2019/7/banhtt.owl#Củ_Hành -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thu/ontologies/2019/7/banhtt.owl#Củ_Hành">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thu/ontologies/2019/7/banhtt.owl#Thành_Phần_Bánh"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thu/ontologies/2019/7/banhtt.owl#Hành"/>
     </owl:Class>
     
 

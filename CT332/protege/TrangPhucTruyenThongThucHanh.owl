@@ -1115,6 +1115,10 @@
         <NamedIndividual IRI="#Dress-Thai"/>
         <NamedIndividual IRI="#Xoe-Chieng"/>
     </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBraceletis"/>
+        <ObjectProperty IRI="#hasHatis"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasBraceletis"/>
         <ObjectProperty IRI="#hasBraceletis"/>

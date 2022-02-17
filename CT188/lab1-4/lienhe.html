@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon.ico"
+      type="images/vnd.microsoft.icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./jquery-3.6.0.min.js"></script>
+    <title>liên Hệ</title>
+  </head>
+
+  <body>
+    <header>
+      <p>
+        <a href="trangchu.html">
+          <img id="logo" src="./images/logo.png" alt="logo" />
+        </a>
+        <img id="header-img1" src="./images/header-img1.png" alt="#" />
+        <img id="header-img2" src="./images/header-img2.png" alt="#" />
+        <img id="header-img3" src="./images/header-img3.png" alt="#" />
+      </p>
+
+      <nav>
+        <p>
+          <a href="trangchu.html">Trang Chủ</a>
+          <a href="gioithieu.html">Giới Thiệu</a>
+          <a href="sanpham.html">Sản Phẩm</a>
+          <a href="tintuc.html">Tin Tức</a>
+          <a href="dangnhap.html">Đăng Nhập</a>
+          <a href="dangky.html">Đăng Ký</a>
+          <a href="lienhe.html">Liên Hệ</a>
+        </p>
+        <div class="search-container">
+          <form id="frm_search" method="GET" action="timkiem.html">
+            <div class="input-container">
+              <input
+                type="text"
+                class="search"
+                name="search"
+                id="search"
+                placeholder="Nhập nội dung cần tìm"
+              />
+              <button id="btnSubmit" class="searchBtn" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+              <button class="searchBtn" id="btnCart" type="button">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="one-col">
+      <article>
+        <div>
+          <h1>Liên hệ</h1>
+          <p>
+            <img class="flag" src="./images/lienhe/check-in.png" alt="" />
+            <b>Địa chỉ: 0123, Toà Nhà ABC, TP Cần Thơ</b>
+            Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng
+            biểu mẫu bên dưới. Xin cám ơn.
+          </p>
+        </div>
+        <form
+          action="./lienhe.html"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+          id="contact"
+        >
+          <fieldset>
+            <h1>Góp ý</h1>
+            <div>
+              <label for="fname"><i class="fa fa-user icon-login"></i></label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                size="20"
+                required
+                placeholder="Vui lòng nhập họ tên"
+              />
+            </div>
+
+            <div>
+              <label for="email"
+                ><i class="fa fa-envelope icon-login"></i
+              ></label>
+              <input
+                type="text"
+                name="psw"
+                id="email"
+                size="20"
+                required
+                placeholder="Vui lòng nhập Email"
+              />
+            </div>
+
+            <div>
+              <label for="list"><i class="fa fa-list icon-login"></i></label>
+              <select name="option" size="1">
+                <option value="nameOption">Về Sản Phẩm/ Dịch Vụ</option>
+                <option value="nameOption">Về Ưu Đãi Thành Viên</option>
+                <option value="nameOption">Về Tin Tuyển Dụng</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="content"><i class="fa fa-file icon-login"></i></label>
+              <textarea
+                name="content"
+                id="content"
+                cols="50"
+                rows="7"
+                required
+                placeholder="Nội dung cần liên hệ"
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" value="Gửi">Gửi</button>
+            </div>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <div>
+        &copy; 2021 Bản quyền thuộc về FreezeVN. Huỳnh Bảo Khang B1913306
+        <a href="#"><i class="fa fa-facebook-f social-icon"></i></a>
+        <a href="#"><i class="fa fa-twitter social-icon"></i></a>
+        <a href="#"><i class="fa fa-pinterest social-icon"></i></a>
+        <a href="#logo" class="gotop">
+          <img src="images/top.png" class="top" alt="#" />
+        </a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+      const regexEmail = (email) => {
+        const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailReg.test(email);
+      };
+      const regexPassword = (password) => {
+        return password.length > 8;
+      };
+      const regexContent = (content) => {
+        return content.length > 10;
+      };
+      const regexName = (name) => {
+        return name.length > 4;
+      };
+      const formContact = document.getElementById("contact");
+      formContact.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email");
+        const name = document.getElementById("fname");
+        const content = document.getElementById("content");
+        if (
+          regexEmail(email.value) &&
+          regexName(name.value) &&
+          regexContent(content.value)
+        ) {
+          formContact.submit();
+          alert("Gửi dữ liệu thành công!");
+          location.reload();
+        } else {
+          alert("Dữ liệu không hợp lệ");
+          e.preventDefault();
+          return false;
+        }
+      });
+    </script>
+  </body>
+</html>

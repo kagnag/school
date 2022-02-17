@@ -1,0 +1,1742 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl"
+     xml:base="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xoi="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Gạo_Nếp_là -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Gạo_Nếp_là">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Gạo_Nếp_của"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Thành_Phần_là -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Thành_Phần_là">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Đặc_Sản_là"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Thành_Phần_của"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Đặc_Sản_là -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#có_Đặc_Sản_là">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Đặc_Sản_của"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Gạo_Nếp_của -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Gạo_Nếp_của">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Thành_Phần_của -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Thành_Phần_của">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_ngày_làm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_ngày_làm">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#được_làm_ngày"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Đặc_Sản_của -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#là_Đặc_Sản_của">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#được_làm_ngày -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#được_làm_ngày">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Dừa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Dừa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nghệ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nghệ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Năng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Năng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nếp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nếp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Tẻ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Tẻ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cà_Rốt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cà_Rốt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá_Rô -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá_Rô">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cải_Thảo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cải_Thảo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cốm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cốm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Mã_Thầy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Mã_Thầy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Sắn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Sắn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Non_Bào -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Non_Bào">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Cái_Hoa_Vàng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Cái_Hoa_Vàng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Dài -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Dài">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Tròn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Tròn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gừng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gừng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Phi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Phi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Tím_Phi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Tím_Phi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Bắp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Bắp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Dẻ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Dẻ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Nêm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Nêm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Sen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Sen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Mì -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Mì">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Môn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Môn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Cẩm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Cẩm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Sen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Sen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lạp_Xưởng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lạp_Xưởng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Trung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Trung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc"/>
+        <xoi:có_Đặc_Sản_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Mít -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Mít">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Dừa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Dừa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Tương -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Tương">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Hương -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Hương">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Mèo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Mèo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nếp_Cẩm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nếp_Cẩm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <xoi:là_Gạo_Nếp_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Pate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Pate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Quả_Gấc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Quả_Gấc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Khúc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Khúc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Củ"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rượu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rượu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Sầu_Riêng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Sầu_Riêng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Ba_Chỉ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Ba_Chỉ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Chim_Bồ_Câu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Chim_Bồ_Câu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Gà -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Gà">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Mỡ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Mỡ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Vai_Xay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Vai_Xay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Xay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Xay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Vịt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Vịt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng_Vịt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng_Vịt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tương_Ớt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tương_Ớt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Trung_Thu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Trung_Thu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội"/>
+        <xoi:là_ngày_làm rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tỏi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tỏi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng_Rang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng_Rang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xoài -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xoài">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hoa_Quả"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xì_Dầu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xì_Dầu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bắp"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Tím_Phi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Bắp"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Bọc_Thịt_Hấp"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cải_Thảo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Mã_Thầy"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Tương"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rượu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Ba_Chỉ"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Trứng_Vịt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chim_Bồ_Câu"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Cái_Hoa_Vàng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Phi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Chim_Bồ_Câu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Chiên"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cà_Rốt"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Sắn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Nêm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Mèo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Xay"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tương_Ớt"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cá_Rô_Hấp_Lá_Sen"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cà_Rốt"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cá_Rô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Tím_Phi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Nêm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Sen"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Hương"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Mèo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Cốm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Cốm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Trung_Thu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Dừa"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng_Rang"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Hoa_Mai"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gà"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Tương"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Gà"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tỏi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Gấc"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Quả_Gấc"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Trắng"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Trung"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Dẻ"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Dẻ"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Hạt_Sen"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hạt_Sen"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khoai_Môn"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Non_Bào"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Môn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Khúc"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Năng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nếp"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Tẻ"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rau_Khúc"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Nạc_Vai_Xay"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tiêu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Cẩm"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Cẩm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Trắng"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Lá_Dứa_Khoai_Mì"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Khoai_Mì"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Mít"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Mít"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Nếp_Cẩm"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nếp_Cẩm"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Năng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Non_Bào"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Pate"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Phi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Pate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sầu_Riêng"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Dài"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Hạt_Tròn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Sầu_Riêng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Sắn"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Củ_Sắn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lạp_Xưởng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Mỡ"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Trắng_Lạp_Xưởng"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Phi"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lạp_Xưởng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Hương"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xì_Dầu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vò_Gấc"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Cái_Hoa_Vàng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Quả_Gấc"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Rượu"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vị"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lá_Dứa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Vịt"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Lá"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nấm_Mèo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thịt_Vịt"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xoài"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Năng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Non_Bào"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Nước_Cốt_Dừa"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xoài"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Nam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Xéo"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Bột_Nghệ"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Hành_Khô"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Bắc"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Phộng"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Xanh"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh"/>
+        <xoi:là_Đặc_Sản_của rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Miền_Trung"/>
+        <xoi:được_làm_ngày rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tết_Nguyên_Đán"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đen"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dầu_Ăn"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang_Vàng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Xôi_Đậu_Đỏ"/>
+        <xoi:có_Gạo_Nếp_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gạo_Nếp_Ngon"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Dừa_Nạo"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Muối"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Vừng"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường"/>
+        <xoi:có_Thành_Phần_là rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đỏ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Hoa_Mai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Hoa_Mai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Trắng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đường_Trắng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Gia_Vị"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang_Vàng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Phộng_Rang_Vàng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Xanh_Không_Vỏ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đỏ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu_Đỏ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đậu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Lễ_Hội"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Thành_Phần"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Tên_Xôi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nghia-quang-khang/ontologies/2021/11/xoi.owl#Đặc_Sản_Vùng_Miền"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

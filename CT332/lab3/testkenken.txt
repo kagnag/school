@@ -1,0 +1,31 @@
+
+	/*kenken.size_k=8;
+	kenken.ken[0].fr[0].x = 0; kenken.ken[0].fr[0].y = 0; 
+	kenken.ken[0].fr[1].x = 0 ;kenken.ken[0].fr[1].y = 1; 
+		kenken.ken[0].opt = '/'; kenken.ken[0].result = 2; kenken.ken[0].size_f = 2;
+    kenken.ken[1].fr[0].x = 0; kenken.ken[1].fr[0].y = 2;
+	kenken.ken[1].fr[1].x = 1; kenken.ken[1].fr[1].y = 2; 
+		kenken.ken[1].opt = '+'; kenken.ken[1].result = 7; kenken.ken[1].size_f = 2;
+    kenken.ken[2].fr[0].x = 0; kenken.ken[2].fr[0].y = 3;                                             			
+		kenken.ken[2].opt = ' '; kenken.ken[2].result = 4; kenken.ken[2].size_f = 1;
+    kenken.ken[3].fr[0].x = 1; kenken.ken[3].fr[0].y = 0; 
+	kenken.ken[3].fr[1].x = 2; kenken.ken[3].fr[1].y = 0; 
+		kenken.ken[3].opt = '-'; kenken.ken[3].result = 1; kenken.ken[3].size_f = 2;
+    kenken.ken[4].fr[0].x = 1; kenken.ken[4].fr[0].y = 1; 
+	kenken.ken[4].fr[1].x = 2; kenken.ken[4].fr[1].y = 1; 
+		kenken.ken[4].opt = '-'; kenken.ken[4].result = 3; kenken.ken[4].size_f = 2;
+    kenken.ken[5].fr[0].x = 1; kenken.ken[5].fr[0].y = 3; 
+	kenken.ken[5].fr[1].x = 2; kenken.ken[5].fr[1].y = 3; 
+		kenken.ken[5].opt = '-'; kenken.ken[5].result = 2; kenken.ken[5].size_f = 2;
+    kenken.ken[6].fr[0].x = 2; kenken.ken[6].fr[0].y = 2; 
+	kenken.ken[6].fr[1].x = 3; kenken.ken[6].fr[1].y = 2;
+    kenken.ken[6].fr[2].x = 3; kenken.ken[6].fr[2].y = 3;                                            			
+		kenken.ken[6].opt = '*'; kenken.ken[6].result = 4; kenken.ken[6].size_f = 3;
+    kenken.ken[7].fr[0].x = 3; kenken.ken[7].fr[0].y = 0; 
+	kenken.ken[7].fr[1].x = 3; kenken.ken[7].fr[1].y = 1; 
+		kenken.ken[7].opt = '-'; kenken.ken[7].result = 1; kenken.ken[7].size_f = 2;
+	int i, j;
+	for (i = 0; i < NB_ROWS; i++)
+		for (j = 0; j < NB_COLUMNS; j++)
+			kenken.cells[i][j] = EMPTY;
+	init_Constrains(&kenken.constrains);*/

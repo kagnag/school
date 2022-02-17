@@ -1,0 +1,18 @@
+AI so với Machine Learning và Deep Learning
+Trước hết hãy xem sự khác biệt giữa Artificial intelligence (trí tuệ nhân tạo), machine learning (học máy) và deep learning (học sâu) là gì? Biểu đồ dưới đây của NVIDIA cho biết:
+Trí tuệ nhân tạo là một ngành học được ra đời vào đầu những năm 1950.
+Học máy là nghiên cứu các thuật toán học theo kinh nghiệm. Nó đã đạt được những động lực kể từ những năm 1980 và là một lĩnh vực phụ của AI.
+Học sâu là một lĩnh vực con mới hơn của học máy sử dụng mạng nơ-ron. Nó đã rất thành công trong một số lĩnh vực nhất định (xử lý hình ảnh, video, văn bản và âm thanh).
+
+https://itguru.vn/blog/wp-content/uploads/2021/08/ai-ml-dl.jpg
+https://nordiccoder.com/app/uploads/2020/06/79-AI.jpg
+https://images.viblo.asia/a8d9863f-ac21-46d3-8606-fe2d6eef4370.png
+https://ngochoangblog.com/wp-content/uploads/2019/12/hinh-cay-thong-noel-dep.jpg
+https://cdn.tgdd.vn/Files/2021/09/14/1382575/tet-nam-nam-2022-vao-ngay-nao-duong-lich-am-lich-duoc-nghi-bao-nhieu-ngay-202109141420197704.jpg
+https://previews.123rf.com/images/versusstudio/versusstudio1509/versusstudio150900197/46115054-abstract-architecture-white-building-design-background-3d-render-illustration.jpg
+https://previews.123rf.com/images/versusstudio/versusstudio1509/versusstudio150900197/46115054-abstract-architecture-white-building-design-background-3d-render-illustration.jpg
+https://msmobile.com.vn/upload_images/images/tai-hinh-nen-giang-sinh-dep-cho-may-tinh-19.jpg
+https://fptshop.com.vn/Uploads/images/image001(2357).jpg
+http://images.gofreedownload.net/2/snowflake-background-shading-50115.jpg
+https://msmobile.com.vn/upload_images/images/tai-hinh-nen-giang-sinh-dep-cho-may-tinh-19.jpg
+https://msmobile.com.vn/upload_images/images/tai-hinh-nen-giang-sinh-dep-cho-may-tinh-19.jpg

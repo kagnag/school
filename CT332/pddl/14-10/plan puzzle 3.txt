@@ -1,5 +1,0 @@
-(move-up x3 y2 t6 x2)
-(move-up x2 y2 t8 x1)
-(move-left x1 y2 t2 y1)
-(move-down x1 y1 t1 x2)
-(move-right x2 y1 t8 y2)

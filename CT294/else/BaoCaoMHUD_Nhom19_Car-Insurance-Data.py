@@ -1,4 +1,3 @@
-import imp
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -13,12 +12,10 @@ le = LabelEncoder()
 from sklearn.preprocessing import StandardScaler
 ss = StandardScaler()
 
-
 dt = pd.read_csv("D:\Car_Insurance_Claim.csv", delimiter=",")
 
 def mahoa():
-    print("Du lieu truoc khi ma hoa\n{}",dt.iloc[:20,:])
-
+    # print("Du lieu truoc khi ma hoa\n{}",dt.iloc[:20,:])
     dt['ID'] = le.fit_transform(dt['ID'])
     dt['AGE'] = le.fit_transform(dt['AGE'])
     dt['GENDER'] = le.fit_transform(dt['GENDER'])
@@ -34,32 +31,12 @@ def mahoa():
     dt['POSTAL_CODE'] = le.fit_transform(dt['POSTAL_CODE'])
     dt['ANNUAL_MILEAGE'] = le.fit_transform(dt['ANNUAL_MILEAGE'])
     dt['VEHICLE_TYPE'] = le.fit_transform(dt['VEHICLE_TYPE'])
-    # dt['SPEEDING_VIOLATIONS'] = le.fit_transform(dt['SPEEDING_VIOLATIONS'])
-    # dt['DUIS'] = le.fit_transform(dt['DUIS'])
-    # dt['PAST_ACCIDENTS'] = le.fit_transform(dt['PAST_ACCIDENTS'])
+    dt['SPEEDING_VIOLATIONS'] = le.fit_transform(dt['SPEEDING_VIOLATIONS'])
+    dt['DUIS'] = le.fit_transform(dt['DUIS'])
+    dt['PAST_ACCIDENTS'] = le.fit_transform(dt['PAST_ACCIDENTS'])
     dt['OUTCOME'] = le.fit_transform(dt['OUTCOME'])
-
-    print("Du lieu sau khi ma hoa\n{}",dt.iloc[:20,:])
-# mahoa()
-
-
-# Cay quyet dinh voi tat ca du lieu
-def cqd_all_data():
-    mahoa()
-    print("Giai thuat cay quyet dinh")
-    avg = 0
-    for i in range(10):
-        X_train, X_test, y_train, y_test = train_test_split(dt, dt.OUTCOME, test_size = 2/5, random_state = 100*i)
-        clf = DecisionTreeClassifier(criterion="gini", random_state = 500, max_depth = 3, min_samples_leaf = 1)
-        clf.fit(X_train, y_train)
-        y_pred = clf.predict(X_test)
-        print("Lan lap {}: Accuracy is {}".format(i+1,round(accuracy_score(y_test, y_pred)*100, 3)))
-        
-        avg += accuracy_score(y_test, y_pred)*100
-
-    # print("Do chinh xac trung binh la:", avg/10)
-    # print(confusion_matrix(y_test, y_pred, labels = y_test))
-# cqd_all_data()
+    # print("Du lieu sau khi ma hoa\n{}",dt.iloc[:20,:])
+mahoa()
 
 
 # Tim max_depth, min_sample_leaf
@@ -68,8 +45,7 @@ def find_min_max():
     max = -1
     m_depth = 0
     m_s_leaf = 0
-
-    X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,15:18], dt.OUTCOME, test_size = 2/5, random_state = 100)
+    X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,0:18], dt.OUTCOME, test_size = 2/5, random_state = 100)
     for i in range(1,11):
         for j in range(1,11):
             clf = DecisionTreeClassifier(criterion="gini", random_state = 100, max_depth = i, min_samples_leaf = j)
@@ -92,8 +68,8 @@ def cqd():
     print("Giai thuat cay quyet dinh")
     avg = 0
     for i in range(10):
-        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,2:5], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
-        clf = DecisionTreeClassifier(criterion="gini", random_state = 500, max_depth = 5, min_samples_leaf = 2)
+        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,0:18], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
+        clf = DecisionTreeClassifier(criterion="gini", random_state = 500, max_depth = 7, min_samples_leaf = 10)
         clf.fit(X_train, y_train)
         y_pred = clf.predict(X_test)
         # clf.predict([[1,1,1]])
@@ -101,7 +77,7 @@ def cqd():
         
         avg += accuracy_score(y_test, y_pred)*100
 
-    # print("Do chinh xac trung binh la:", avg/10)
+    print("\nDo chinh xac trung binh la:", avg/10)
     # print(confusion_matrix(y_test, y_pred, labels = y_test))
 # cqd()
 
@@ -110,7 +86,7 @@ def cqd():
 def bayes():
     print("Giai thuat Bayes")
     for i in range(10):
-        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,15:18], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
+        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,0:18], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
         model = GaussianNB()
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
@@ -123,8 +99,8 @@ def bayes():
 def find_n_neighbors():
     max = -1
     j = 0
-    for i in range(1,21):
-        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,15:18], dt.OUTCOME, test_size = 2/5, random_state = 100)
+    for i in range(1,11):
+        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,0:18], dt.OUTCOME, test_size = 2/5, random_state = 100)
         Mohinh_KNN = KNeighborsClassifier(n_neighbors = i)
         Mohinh_KNN.fit(X_train, y_train)
         y_pred = Mohinh_KNN.predict(X_test)
@@ -140,11 +116,11 @@ def find_n_neighbors():
 def knn():
     print("Giai thuat KNN")
     for i in range(10):
-        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,15:18], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
-        Mohinh_KNN = KNeighborsClassifier(n_neighbors = 6)
+        X_train, X_test, y_train, y_test = train_test_split(dt.iloc[:,0:18], dt.OUTCOME, test_size = 2/5, random_state = 100*i)
+        Mohinh_KNN = KNeighborsClassifier(n_neighbors = 10)
         Mohinh_KNN.fit(X_train, y_train)
         y_pred = Mohinh_KNN.predict(X_test)
         # Mohinh_KNN.predict([[1,1,1]])
         print("Lan lap {} Accuracy is {}".format(i+1,round(accuracy_score(y_test, y_pred)*100, 3)))
     # print(confusion_matrix(y_test, y_pred, labels = [1, 0, 1]))
-# knn()
+knn()
